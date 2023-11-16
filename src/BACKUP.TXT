@@ -1,0 +1,7 @@
+"Prince of Persia 2: The Shadow and The Flame","C:\PROGRA~2\REDORB~1\PRINCE~1\PRINCE2","PRINCE.EXE"
+"Prince of Persia","C:\PROGRA~2\REDORB~1\PRINCE~1\PRINCE1","PRINCE.EXE"
+"Duke Nukem 3D","C:\GAMES\DUKE_N~1\DUKE3D","DUKE3D.EXE"
+"Batman Forever","C:\GAMES\BATMAN~1\BATMANF\","BATMAN.EXE"
+"Psycho Pinball","C:\GAMES\PSYCHO~1\","PSYCHO.BAT"
+"The Secret of Monkey Island","C:\GAMES\THE_SE~1\THE_SE~1","MONKEY.EXE"
+"Monkey Island 2: LeChuck's Revenge","C:\GAMES\THE_SE~2\THE_SE~2","MONKEY2.EXE"
