@@ -17,6 +17,7 @@ IF PATHPARAM$ <> "" THEN INSTALLPATH$ = PATHPARAM$
 PRINT "Installing in " + INSTALLPATH$
 INPUT "This will update also your autoexec.bat . Confirm (Y/N)"; ANSWER$
 IF ANSWER$ = "y" OR ANSWER$ = "Y" THEN
+    SHELL "mkdir c:\dostogo"
     SHELL "copy GO.BAT " + INSTALLPATH$
     SHELL "copy LASTRUN.BAT " + INSTALLPATH$
     SHELL "copy LIST.TXT " + INSTALLPATH$
@@ -25,8 +26,8 @@ IF ANSWER$ = "y" OR ANSWER$ = "Y" THEN
     PRINT "done"
     PRINT "updating autoexec.bat"
     OPEN "C:\AUTOEXEC.BAT" FOR APPEND AS #1
-    WRITE #1, "SET DOSTOGO=" + INSTALLPATH$
-    WRITE #1, "SET PATH=%PATH%;%DOSTOGO%"
+    PRINT #1, "SET DOSTOGO=" + INSTALLPATH$
+    PRINT #1, "SET PATH=%PATH%;%DOSTOGO%"
     CLOSE #1
     PRINT "setting up your running environment"
     SHELL "SET DOSTOGO=" + INSTALLPATH$
