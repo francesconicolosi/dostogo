@@ -50,7 +50,7 @@ PRINT ""
 
 
 PRINT (CURRENTPAGE + 1); "/"; TOTALPAGES + 1
-PRINT "(Q)uit, (P)age change, (E)xecute, (A)dd line, (R)emove line"
+PRINT "(Q)uit, (P)age change, (A)dd line, (R)emove line"
 DO
 	WHILE k$ = ""
 	k$ = INKEY$
@@ -108,7 +108,7 @@ SELECT CASE k$
 		SELECTEDENTRY = 0
 		CURRENTPAGE = 0
 		END IF
-	CASE "e"
+	CASE CHR$(13)
 		CLS
 		OPEN ENVIRON$("DOSTOGO") + "\LASTRUN.BAT" FOR OUTPUT AS #1
 		PRINT #1, "@echo off"
